@@ -284,3 +284,19 @@ h1 {
 .mixer i {
   margin:0 10px;
 }
+
+/* volume */
+
+.volume {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.volume-line {
+  width: 30%;
+  border-bottom: 3px solid grey;
+}
+
+.volume > * {
+  margin:0 15px;
+}
