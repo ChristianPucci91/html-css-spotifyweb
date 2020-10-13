@@ -23,15 +23,17 @@ section {
 
 /* Sezione Aside */
 
+aside {
+  background: #000;
+}
 .aside {
   display: flex;
   flex-direction: column;
-  background:#000000;
   min-height: 100%;
   width: 200px;
   padding-left: 10px;
   color:white;
-  justify-content:flex-start;
+
 }
 
 .logo {
@@ -124,8 +126,13 @@ h1 {
 
 /* Sezione footer */
 
-.footer {
-  display: flex;
+ footer {
+  /* display: flex; */
   min-height: 80px;
   background:#282828;
+  position: fixed;
+  bottom:0;
+  left:0;
+  width: 100%;
+  z-index: 900;
 }
