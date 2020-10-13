@@ -8,44 +8,58 @@
 
 /* Sezione main */
 
-.viewport {
+main {
   display: flex;
-  height: calc(100vh - 100px);
+  background:#141922;
+}
 
-  /* debug */
-  background: red;
-  opacity: 0.5;
-  /* fine debug */
+/* Section */
+
+section {
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* Sezione Aside */
 
 .aside {
-  /* debug */
-  background: blue;
-  /* fine debug */
-  height: calc(100vh - 100px);
-  width: 300px;
+  background:#000000;
+  min-height: 100%;
+  width: 250px;
 }
 
 /* Sezione Header */
 
 .header {
+  display:flex;
   min-height: 100px;
-  width: calc(100vw - 300px);
-  /* debug */
-  background: black;
-  opacity: 0.5;
-  /* fine debug */
+  background: #080b12;
+  justify-content: flex-end;
+  align-items: center;
 }
+
+.upgrade {
+  color:#ccc;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+/* Sezione scroll */
+
+/* debug */
+h1 {
+  font-size: 50px;
+  color:#ccc;
+}
+/* fine debug */
 
 /* Sezione footer */
 
 .footer {
   display: flex;
   min-height: 100px;
-  /* debug */
-  background: green;
-  opacity: 0.5;
-  /* fine debug */
+  background:#282828;
 }
