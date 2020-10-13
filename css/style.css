@@ -1,0 +1,51 @@
+/* Regole generali */
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sezione main */
+
+.viewport {
+  display: flex;
+  height: calc(100vh - 100px);
+
+  /* debug */
+  background: red;
+  opacity: 0.5;
+  /* fine debug */
+}
+
+/* Sezione Aside */
+
+.aside {
+  /* debug */
+  background: blue;
+  /* fine debug */
+  height: calc(100vh - 100px);
+  width: 300px;
+}
+
+/* Sezione Header */
+
+.header {
+  min-height: 100px;
+  width: calc(100vw - 300px);
+  /* debug */
+  background: black;
+  opacity: 0.5;
+  /* fine debug */
+}
+
+/* Sezione footer */
+
+.footer {
+  display: flex;
+  min-height: 100px;
+  /* debug */
+  background: green;
+  opacity: 0.5;
+  /* fine debug */
+}
