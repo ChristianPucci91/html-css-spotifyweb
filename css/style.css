@@ -4,6 +4,7 @@
   margin:0;
   padding: 0;
   box-sizing: border-box;
+  color:white;
 }
 
 /* Sezione main */
@@ -11,12 +12,12 @@
 main {
   display: flex;
   background:#141922;
+  height: calc(100vh - 80px);
 }
 
 /* Section */
 
 section {
-  height: calc(100vh - 80px);
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -24,16 +25,25 @@ section {
 /* Sezione Aside */
 
 aside {
-  background: #000;
-}
-.aside {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  justify-content: space-between;
+  background: #000;
+}
+
+aside > hr {
+  width: 90%;
+  margin:auto;
+}
+
+.aside {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
   width: 200px;
   padding-left: 10px;
   color:white;
-
+  justify-content: flex-start;
 }
 
 .logo {
@@ -46,13 +56,13 @@ aside {
 
 .aside div {
   max-width: 80%;
-  max-height: 50px;
+
 }
 
-.aside h3 {
+.aside h5 {
   margin:20px 0 0 0;
 }
-.icon, .playlist{
+.icon, .playlist,.install,.user{
   display: flex;
   align-items: center;
   margin:5px 0;
@@ -61,12 +71,12 @@ aside {
 /* sezione icone */
 
 .icon img {
-  max-width: 20px;
+  max-width: 15px;
   margin-right: 5px;
 }
 
 .icon h3 {
-  font-size: 15px;
+  font-size: 5px;
 }
 
 /* playlist */
@@ -76,7 +86,7 @@ aside {
 }
 
 .playlist i {
-  font-size: 40px;
+  font-size: 30px;
   color:lightgrey;
   margin-right: 10px;
 }
@@ -87,12 +97,42 @@ aside {
   display: flex;
   flex-wrap:wrap;
   margin-top: 10px;
+  overflow-y: auto;
 }
 
 .liste a {
   text-decoration: none;
   color:lightgrey;
   margin:5px 0;
+  font-size: 14px;
+}
+
+/* install */
+
+.install {
+  align-self: flex-start;
+  justify-content: flex-end;
+  margin-left: 10px;
+}
+
+.install img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* user */
+.user {
+  align-self: flex-start;
+  justify-content: flex-end;
+  margin:10px 0 10px 10px
+}
+
+.user img {
+  width: 20px;
+  margin-right: 10px;
+  border: 1px solid grey;
+  border-radius: 100%;
+  background-color: grey;
 }
 
 
@@ -106,12 +146,12 @@ aside {
   align-items: center;
 }
 
-.upgrade h4 {
+.upgrade h6 {
   color:#ccc;
-  margin-right: 20px;
+  margin-right: 10px;
   border: 1px solid #ccc;
   border-radius: 30px;
-  padding: 20px 40px;
+  padding: 20px 50px;
   font-size: 10px;
 }
 
@@ -127,7 +167,6 @@ h1 {
 /* Sezione footer */
 
  footer {
-  /* display: flex; */
   min-height: 80px;
   background:#282828;
   position: fixed;
@@ -135,4 +174,15 @@ h1 {
   left:0;
   width: 100%;
   z-index: 900;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* sezione artist */
+.artist img {
+  width: 40px;
 }
