@@ -13,6 +13,7 @@ main {
   display: flex;
   background:#141922;
   height: calc(100vh - 80px);
+
 }
 
 /* Section */
@@ -20,6 +21,7 @@ main {
 section {
   overflow-y: auto;
   overflow-x: hidden;
+  width: 100%;
 }
 
 /* Sezione Aside */
@@ -157,6 +159,64 @@ aside > hr {
 
 /* Sezione scroll */
 
+
+/* main menu */
+.main-menu {
+  display: flex;
+  width: 60%;
+  margin:auto;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color:lightgrey;
+}
+
+.main-menu span {
+  padding-bottom: 5px;
+}
+
+.main-menu span:active {
+  background:linear-gradient(green,green) bottom  no-repeat;
+  background-size:50% 3px;
+}
+
+/* Recently played */
+
+.box,.row-2 {
+  height: 25%;
+  margin: 20px 10px;
+}
+
+.box > h5,.row-2 h5,.box > h2,.row-2 h2 {
+  margin:10px 10px;
+}
+
+.recently {
+  display: flex;
+  justify-content:flex-start;
+  text-align: center;
+}
+
+.user-for {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.genre {
+ margin:10px;
+}
+
+.genre img {
+  max-width: 200px;
+}
+
+#circle-img img {
+ border-radius: 100%;
+}
 /* debug */
 h1 {
   font-size: 50px;
