@@ -180,9 +180,107 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 80px;
+}
+
+.footer > div {
+  width: calc(100% / 3);
 }
 
 /* sezione artist */
+
+.artist {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+}
+
 .artist img {
-  width: 40px;
+  width: 50px;
+}
+
+.artist-name {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  width: 40%;
+}
+
+.artist-icon {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.artist-icon i {
+  margin-right: 20px;
+}
+
+/* Sezione mixer */
+
+.mixer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.track {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* debug testing hover effect */
+.line-white {
+  position:absolute;
+  border-bottom: 4px solid white;
+  width: 20%;
+  border-radius: 20px;
+  top: 65%;
+  left:20%;
+  transform: translate( -50% , -50% );
+}
+
+.volume-circle {
+  position:absolute;
+  display: none;
+  width: 24%;
+  top: 65%;
+  left:22%;
+  transform: translate( -50% , -50% );
+}
+.volume-circle {
+  text-align: right;
+}
+
+.volume-circle:hover {
+   display:block;
+}
+
+.line-white:hover {
+  border-color: lightgreen;
+}
+
+/* fine debug  */
+
+
+.line {
+  width: 80%;
+  margin:auto;
+  border-bottom: 4px solid grey;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.far.fa-play-circle {
+  font-size: 30px;
+}
+
+.mixer i {
+  margin:0 10px;
 }
