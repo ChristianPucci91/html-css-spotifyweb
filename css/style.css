@@ -5,6 +5,14 @@
   padding: 0;
   box-sizing: border-box;
   color:white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.icon, .playlist,.install,.user{
+  display: flex;
+  align-items: center;
+  margin:5px 0;
 }
 
 /* Sezione main */
@@ -48,49 +56,72 @@ aside > hr {
   justify-content: flex-start;
 }
 
+/* Logo Spotify */
+
 .logo {
-  margin:15px 0 20px 0;
+  height: 80px;
+  padding: 20px;
 }
 
 .logo img {
-  width: 70%;
-}
-
-.aside div {
-  max-width: 80%;
-
-}
-
-.aside h5 {
-  margin:20px 0 0 0;
-}
-.icon, .playlist,.install,.user{
-  display: flex;
-  align-items: center;
-  margin:5px 0;
+  width: 100%;
 }
 
 /* sezione icone */
+
+.icon {
+  opacity: 0.5;
+  padding-left: 5px;
+}
+
+.icon a {
+  width: 100%;
+  text-decoration: none;
+}
+
+.icon:hover {
+  opacity: 1;
+}
+
+.icon:active {
+  border-left: 2px solid #ccff00;
+}
 
 .icon img {
   max-width: 15px;
   margin-right: 5px;
 }
 
-.icon h3 {
-  font-size: 5px;
-}
-
 /* playlist */
 
+.playlist-title {
+  margin:20px 0 0 0;
+  padding-left: 5px;
+}
+
 .playlist {
-  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  opacity: 0.5;
+}
+
+.playlist a {
+  text-decoration: none;
 }
 
 .playlist i {
-  font-size: 30px;
+  font-size: 40px;
   color:lightgrey;
   margin-right: 10px;
+  padding-left: 5px;
+}
+
+.playlist span {
+  font-size: 15px;
+}
+
+.playlist:hover {
+  opacity: 1;
 }
 
 /* liste */
@@ -104,9 +135,13 @@ aside > hr {
 
 .liste a {
   text-decoration: none;
-  color:lightgrey;
+  opacity: 0.5;
   margin:5px 0;
   font-size: 14px;
+}
+
+.liste a:hover {
+  opacity: 1;
 }
 
 /* install */
@@ -213,6 +248,13 @@ aside > hr {
 .genre img {
   max-width: 200px;
 }
+
+/* .img-album {
+  height: 70%;
+} */
+
+
+
 
 #circle-img img {
  border-radius: 100%;
