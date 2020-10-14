@@ -63,6 +63,12 @@ aside > hr {
   padding: 20px;
 }
 
+/* Logo xs Spotify */
+.logo-xs {
+  display:none;
+  color:white;
+}
+
 .logo img {
   width: 100%;
 }
@@ -276,6 +282,12 @@ aside > hr {
   display: block;
 }
 
+/* Row album */
+
+.row-2 h5 {
+  opacity: 0.5;
+}
+
 /* Recently played */
 
 .box,.row-2 {
@@ -319,9 +331,12 @@ aside > hr {
   opacity: 0.5;
 }
 
-
 #circle-img img {
  border-radius: 100%;
+}
+
+#circle {
+  border-radius: 100%;
 }
 
 /* Sezione footer */
@@ -570,3 +585,14 @@ aside > hr {
 }
 
 /* fine hover effect */
+
+/* ///// MEDIA QUERY ///// */
+
+@media all screen and (max-width:481px); {
+  .logo-xs {
+    display: block;
+  }
+  .logo {
+    display: none;
+  }
+}
