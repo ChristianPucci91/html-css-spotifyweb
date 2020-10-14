@@ -269,10 +269,11 @@ aside > hr {
 
 .genre {
  margin:10px;
+ min-height: 10px;
 }
 
 .genre img {
-  max-width: 200px;
+  max-width: 100%;
 }
 
 #circle-img img {
@@ -478,7 +479,7 @@ aside > hr {
   border-bottom: 3px solid white;
   width: 20%;
   top: 50%;
-  left:74%;
+  left:72%;
   border-radius: 20px;
   transform: translate( -50% , -50% );
 }
@@ -493,7 +494,7 @@ aside > hr {
   border-bottom: 3px solid #1ed760;;
   width: 58%;
   top: 50%;
-  left:50%;
+  left:46%;
   border-radius: 20px;
   transform: translate( -50% , -50% );
 }
