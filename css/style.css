@@ -8,7 +8,6 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-
 .icon, .playlist,.install,.user{
   display: flex;
   align-items: center;
@@ -21,7 +20,6 @@ main {
   display: flex;
   background:#141922;
   height: calc(100vh - 80px);
-
 }
 
 /* Section */
@@ -38,6 +36,8 @@ aside {
   flex-direction: column;
   justify-content: space-between;
   background: #000;
+  height: calc(100vh - 80px);
+
 }
 
 aside > hr {
@@ -54,11 +54,13 @@ aside > hr {
   padding-left: 10px;
   color:white;
   justify-content: flex-start;
+  background: #000;
 }
 
 /* Logo Spotify */
 
 .logo {
+  display: block;
   height: 80px;
   padding: 20px;
 }
@@ -66,10 +68,12 @@ aside > hr {
 /* Logo xs Spotify */
 .logo-xs {
   display:none;
+  width: 100%;
+  padding: 5px;
   color:white;
 }
 
-.logo img {
+.logo img,.logo-xs img {
   width: 100%;
 }
 
@@ -96,6 +100,20 @@ aside > hr {
 .icon img {
   max-width: 15px;
   margin-right: 5px;
+}
+
+.icon-xs {
+  display: none;
+  width: 100%;
+  margin:5px 0;
+}
+
+.icon-xs a {
+  text-decoration: none;
+}
+
+.icon-xs img {
+  max-width: 100%;
 }
 
 /* playlist */
@@ -137,6 +155,7 @@ aside > hr {
   flex-wrap:wrap;
   margin-top: 10px;
   overflow-y: auto;
+  padding-left: 5px;
 }
 
 .liste a {
@@ -234,6 +253,7 @@ aside > hr {
 .main-menu a {
   text-decoration: none;
   opacity: 0.5;
+  font-size: 11px;
 }
 
 .main-menu a:hover {
@@ -246,7 +266,7 @@ aside > hr {
 
 .main-menu span:active {
   background:linear-gradient(#1ed760,#1ed760) bottom  no-repeat;
-  background-size:50% 3px;
+  background-size:50% 2px;
 }
 
 /* Hover img */
@@ -588,11 +608,175 @@ aside > hr {
 
 /* ///// MEDIA QUERY ///// */
 
-@media all screen and (max-width:481px); {
+  /* xs rules media query */
+
+@media all and (max-width:481px) {
+
+  /* Comandi generai */
+  .playlist-title,.playlist,.liste,.icon,.logo,aside > hr {
+    display: none;
+  }
+
+  /* Restringimento aside */
+  .aside {
+    width: 60px;
+    padding-left: 0;
+  }
+
+   /* Logo & icone */
   .logo-xs {
     display: block;
+    color:white;
   }
-  .logo {
+
+  .icon-xs  {
+    display: block;
+  }
+
+  .install a:last-child,.user a:last-child {
     display: none;
+  }
+
+  .install img,.user img {
+    width:40px;
+    text-align: center;
+    margin:auto;
+    margin:5px 0;
+  }
+
+  .install {
+    padding-left: 8px;
+  }
+  .user {
+    padding-left: 10px;
+  }
+
+   /* Wrapping menu & albums */
+  .main-menu,.recently {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content:center;
+  }
+  .main-menu span {
+    flex-basis: 25%;
+    text-align: center;
+  }
+
+  .main-menu a {
+    font-size: 0.46197rem;
+  }
+
+  .recently {
+    justify-content: flex-start;
+  }
+
+  .genre {
+    flex-basis: 50%;
+    padding:10px;
+    margin:0;
+  }
+
+  .genre h3,.genre h5 {
+    font-size: 14px;
+  }
+
+}
+
+/* Extra media query smartphone rotation */
+
+@media all and (min-width: 482px) and (max-width: 568px) {
+
+  /* Wrapping menu & albums */
+
+  .aside,aside{
+    width: 180px;
+  }
+  .main-menu,.recently {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .main-menu span {
+    flex-basis: calc(100% / 3);
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .main-menu a {
+    font-size: 10px;
+  }
+
+  .recently {
+    justify-content: flex-start;
+  }
+
+  .genre {
+    flex-basis: 50%;
+    padding:14px;
+    margin:0;
+  }
+
+  .genre h3,.genre h5 {
+    font-size-adjust: auto;
+  }
+
+}
+
+
+/* s rules media query */
+
+@media all and (min-width: 569px) and (max-width: 769px) {
+
+  /* Wrapping menu & albums */
+  .main-menu,.recently {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .main-menu span {
+    flex-basis: calc(100% / 3);
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .recently {
+    justify-content: flex-start;
+  }
+
+  .genre {
+    flex-basis: 50%;
+    padding:14px;
+    margin:0;
+  }
+
+  .genre h3,.genre h5 {
+    font-size-adjust: auto;
+  }
+
+}
+
+/* md rules media query */
+
+@media all and (min-width: 770px) and (max-width: 992px) {
+
+   /* Wrapping menu & albums */
+  .main-menu,.recently {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .main-menu span {
+    flex-basis: 20%;
+    text-align: center;
+  }
+
+  .recently {
+    justify-content: flex-start;
+  }
+
+  .genre {
+    flex-basis: 25%;
+    padding:10px;
+    margin:0;
   }
 }
