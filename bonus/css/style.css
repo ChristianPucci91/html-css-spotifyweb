@@ -269,8 +269,6 @@ aside > hr {
   font-weight: bolder;
 }
 
-
-
 /* Sezione scroll */
 
 /* main menu */
@@ -718,7 +716,7 @@ aside > hr {
   }
 
    /* Wrapping menu & albums */
-  .main-menu,.recently {
+  /* .main-menu,.recently {
     flex-wrap: wrap;
     width: 100%;
     justify-content:center;
@@ -726,7 +724,7 @@ aside > hr {
   .main-menu span {
     flex-basis: 25%;
     text-align: center;
-  }
+  } */
 
   .main-menu a {
     font-size: 0.46197rem;
@@ -735,12 +733,12 @@ aside > hr {
   .recently {
     justify-content: flex-start;
   }
-
+/*
   .genre {
     flex-basis: 50%;
     padding:10px;
     margin:0;
-  }
+  } */
 
   .genre h3,.genre h5 {
     font-size: 14px;
@@ -860,6 +858,23 @@ aside > hr {
     left:60px;
   }
 
+  /* ESERCIZIO BONUS NASCONDERE GLI ALBUM E IL MAIN MENU ANZICHE' ADATTARLI IN RESPONSIVE */
+
+  .genre {
+    min-width: 110px;
+    min-height: 250px;
+  }
+
+  .main-menu {
+    min-width: 100vw;
+    text-align: center;
+  }
+
+  .header,header {
+    width: calc(100vw + 450px);
+  }
+
+
 }
 
   /* xs rules media query */
@@ -944,7 +959,7 @@ aside > hr {
   }
 
    /* Wrapping menu & albums */
-  .main-menu,.recently {
+  /* .main-menu,.recently {
     flex-wrap: wrap;
     width: 100%;
     justify-content:center;
@@ -952,7 +967,7 @@ aside > hr {
   .main-menu span {
     flex-basis: 25%;
     text-align: center;
-  }
+  } */
 
   .main-menu a {
     font-size: 0.46197rem;
@@ -962,11 +977,11 @@ aside > hr {
     justify-content: flex-start;
   }
 
-  .genre {
+  /* .genre {
     flex-basis: 50%;
     padding:10px;
     margin:0;
-  }
+  } */
 
   .genre h3,.genre h5 {
     font-size: 14px;
@@ -1015,6 +1030,23 @@ aside > hr {
    margin-left: 15px;
  }
 
+ /* ESERCIZIO BONUS NASCONDERE GLI ALBUM E IL MAIN MENU ANZICHE' ADATTARLI IN RESPONSIVE */
+
+ .genre {
+   min-width: 110px;
+   min-height: 250px;
+ }
+
+ .main-menu {
+   min-width: 100vw;
+   text-align: center;
+ }
+
+ .header,header {
+   width: calc(100vw + 300px);
+ }
+
+
 
 }
 
@@ -1037,7 +1069,7 @@ aside > hr {
   .aside,aside{
     width: 180px;
   }
-  .main-menu,.recently {
+  /* .main-menu,.recently {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
@@ -1046,21 +1078,22 @@ aside > hr {
     flex-basis: calc(100% / 3);
     text-align: center;
     margin: 20px 0;
-  }
+  } */
 
   .main-menu a {
     font-size: 10px;
   }
 
+
   .recently {
     justify-content: flex-start;
   }
 
-  .genre {
+  /* .genre {
     flex-basis: 50%;
     padding:14px;
     margin:0;
-  }
+  } */
 
   .genre h3,.genre h5 {
     font-size-adjust: auto;
@@ -1109,6 +1142,23 @@ aside > hr {
    margin-left: 15px;
  }
 
+ /* ESERCIZIO BONUS NASCONDERE GLI ALBUM E IL MAIN MENU ANZICHE' ADATTARLI IN RESPONSIVE */
+
+ .genre {
+   min-width: 110px;
+   min-height: 250px;
+ }
+
+ .main-menu {
+   min-width: 100vw;
+   text-align: center;
+ }
+
+ .header,header {
+   width: calc(100vw + 300px);
+ }
+
+
 }
 
 
@@ -1127,7 +1177,7 @@ aside > hr {
   }
 
   /* Wrapping menu & albums */
-  .main-menu,.recently {
+  /* .main-menu,.recently {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
@@ -1136,17 +1186,17 @@ aside > hr {
     flex-basis: calc(100% / 3);
     text-align: center;
     margin: 20px 0;
-  }
+  } */
 
   .recently {
     justify-content: flex-start;
   }
 
-  .genre {
+  /* .genre {
     flex-basis: 50%;
     padding:14px;
     margin:0;
-  }
+  } */
 
   .genre h3,.genre h5 {
     font-size-adjust: auto;
@@ -1189,6 +1239,23 @@ aside > hr {
     margin-left: 10px;
   }
 
+  /* ESERCIZIO BONUS NASCONDERE GLI ALBUM E IL MAIN MENU ANZICHE' ADATTARLI IN RESPONSIVE */
+
+  .genre {
+    min-width: 110px;
+    min-height: 250px;
+  }
+
+  .main-menu {
+    min-width: 100vw;
+    text-align: center;
+  }
+
+  .header,header {
+    width: calc(100vw + 200px);
+  }
+
+
 }
 
 /* md rules media query */
@@ -1196,25 +1263,25 @@ aside > hr {
 @media all and (min-width: 770px) and (max-width: 992px) {
 
    /* Wrapping menu & albums */
-  .main-menu,.recently {
+  /* .main-menu,.recently {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
-  }
-  .main-menu span {
+  } */
+  /* .main-menu span {
     flex-basis: 20%;
     text-align: center;
-  }
+  } */
 
   .recently {
     justify-content: flex-start;
   }
 
-  .genre {
+  /* .genre {
     flex-basis: 25%;
     padding:10px;
     margin:0;
-  }
+  } */
 
   /* media player */
 
@@ -1241,6 +1308,22 @@ aside > hr {
     align-items: flex-start;
     justify-content: space-between;
     margin-left: 10px;
+  }
+
+  /* ESERCIZIO BONUS NASCONDERE GLI ALBUM E IL MAIN MENU ANZICHE' ADATTARLI IN RESPONSIVE */
+
+  .genre {
+    min-width: 110px;
+    min-height: 250px;
+  }
+
+  .main-menu {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .header,header {
+    width: 100vw;
   }
 
 }
