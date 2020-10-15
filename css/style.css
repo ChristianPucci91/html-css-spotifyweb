@@ -43,7 +43,7 @@ aside {
 aside > hr {
   width: 90%;
   margin:auto;
-  margin:5px 0;
+  margin:5px auto;
 }
 
 .aside {
@@ -610,14 +610,28 @@ aside > hr {
 
 /* ///// MEDIA QUERY ///// */
 
-  /* xs rules media query */
+/* Media query for smaller devices */
 
-@media all and (max-width:481px) {
+
+/* /////  ESERCIZIO BONUS 1 ////// */
+
+@media all and (max-width:439px) {
 
   /* Comandi generai */
   .playlist-title,.playlist,.liste,.icon,.logo,aside > hr {
     display: none;
   }
+
+  /* Regole div footer */
+
+  .footer i {
+    font-size: 7px;
+  }
+
+  .far.fa-play-circle {
+    font-size: 9px;
+  }
+
 
   /* Restringimento aside */
   .aside {
@@ -682,11 +696,217 @@ aside > hr {
     font-size: 14px;
   }
 
+  /* Artist img */
+
+  .artist img {
+    display: none;
+  }
+
+  /* Artist name  */
+
+  .artist {
+    padding-left: 5px;
+    flex-flow: row wrap;
+  }
+
+  .artist-name {
+    width: 100%;
+  }
+
+  .artist-name a {
+    font-size: 10px;
+  }
+
+  /* Media player */
+ .time {
+   margin: 0;
+   font-size: 8px;
+   max-width: 15%;
+ }
+
+ .line {
+   width: 50%;
+   margin:auto;
+ }
+
+ .line-white,.line-green {
+   margin-left:26%;
+   width: 30%;
+ }
+
+ .volume-circle {
+   margin-left:35%;
+   margin-bottom:5px;
+ }
+
+ .mixer-icon i:hover {
+   font-size: 10px;
+ }
+
+
+ /* Artist Icon */
+ .artist-icon {
+   flex-direction: row;
+   align-items: flex-start;
+   justify-content: flex-start;
+   margin-left: 25px;
+ }
+
+ /* Volume section */
+
+ /* .volume {
+   flex-wrap:wrap;
+ }
+
+ .volume *{
+   width:50%;
+   margin-top: 10px;
+ } */
+
+}
+
+  /* xs rules media query */
+
+@media all and (min-width:440px) and (max-width:481px) {
+
+  /* Comandi generai */
+  .playlist-title,.playlist,.liste,.icon,.logo,aside > hr {
+    display: none;
+  }
+
+  /* Regole div footer */
+
+  .footer i {
+    font-size: 10px;
+  }
+
+  .far.fa-play-circle {
+    font-size: 15px;
+  }
+
+
+  /* Restringimento aside */
+  .aside {
+    width: 60px;
+    padding-left: 0;
+  }
+
+   /* Logo & icone */
+  .logo-xs {
+    display: block;
+    color:white;
+  }
+
+  .icon-xs  {
+    display: block;
+  }
+
+  .install a:last-child,.user a:last-child {
+    display: none;
+  }
+
+  .install img,.user img {
+    width:40px;
+    text-align: center;
+    margin:auto;
+    margin:5px 0;
+  }
+
+  .install {
+    padding-left: 8px;
+  }
+  .user {
+    padding-left: 10px;
+  }
+
+   /* Wrapping menu & albums */
+  .main-menu,.recently {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content:center;
+  }
+  .main-menu span {
+    flex-basis: 25%;
+    text-align: center;
+  }
+
+  .main-menu a {
+    font-size: 0.46197rem;
+  }
+
+  .recently {
+    justify-content: flex-start;
+  }
+
+  .genre {
+    flex-basis: 50%;
+    padding:10px;
+    margin:0;
+  }
+
+  .genre h3,.genre h5 {
+    font-size: 14px;
+  }
+
+  /* Artist img */
+
+  .artist img {
+    width: 40px;
+  }
+
+  /* Artist name  */
+
+  .artist-name a {
+    font-size: 10px;
+  }
+
+  /* Media player */
+ .time {
+   margin: 0;
+   font-size: 10px;
+ }
+
+ .line {
+   width: 70%;
+   margin:auto;
+ }
+
+ .line-white,.line-green {
+   margin-left:15%;
+ }
+
+ .volume-circle {
+   margin-left:35%;
+ }
+
+ .mixer-icon i:hover {
+   font-size: 15px;
+ }
+
+ /* Artist Icon */
+ .artist-icon {
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-between;
+   margin-left: 15px;
+ }
+
+
 }
 
 /* Extra media query smartphone rotation */
 
 @media all and (min-width: 482px) and (max-width: 568px) {
+
+  /* Regole div footer */
+
+  .footer i {
+    font-size: 10px;
+  }
+
+  .far.fa-play-circle {
+    font-size: 15px;
+  }
 
   /* Wrapping menu & albums */
 
@@ -722,12 +942,65 @@ aside > hr {
     font-size-adjust: auto;
   }
 
+  /* Artist img */
+
+  .artist img {
+    width: 40px;
+  }
+
+  /* Artist name  */
+
+  .artist-name a {
+    font-size: 10px;
+  }
+
+  /* Media player */
+ .time {
+   margin: 0;
+   font-size: 10px;
+ }
+
+ .line {
+   width: 70%;
+   margin:auto;
+ }
+
+ .line-white,.line-green {
+   margin-left:15%;
+ }
+
+ .volume-circle {
+   margin-left:35%;
+ }
+
+ .mixer-icon i:hover {
+   font-size: 15px;
+ }
+
+ /* Artist Icon */
+ .artist-icon {
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-between;
+   margin-left: 15px;
+ }
+
 }
 
 
 /* s rules media query */
 
 @media all and (min-width: 569px) and (max-width: 769px) {
+
+  /* Regole div footer */
+
+  .footer i {
+    font-size: 13px;
+  }
+
+  .far.fa-play-circle {
+    font-size: 20px;
+  }
 
   /* Wrapping menu & albums */
   .main-menu,.recently {
@@ -753,6 +1026,43 @@ aside > hr {
 
   .genre h3,.genre h5 {
     font-size-adjust: auto;
+  }
+
+   /* Artist name  */
+
+   .artist-name a {
+     font-size: 13px;
+   }
+
+   /* Media player */
+  .time {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .line {
+    width: 70%;
+    margin:auto;
+  }
+
+  .line-white,.line-green {
+    margin-left:15%;
+  }
+
+  .volume-circle {
+    margin-left:35%;
+  }
+
+  .mixer-icon i:hover {
+    font-size: 15px;
+  }
+
+  /* Artist Icon */
+  .artist-icon {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 10px;
   }
 
 }
@@ -781,4 +1091,32 @@ aside > hr {
     padding:10px;
     margin:0;
   }
+
+  /* media player */
+
+  .time {
+    margin: 0;
+  }
+
+  .line {
+    width: 70%;
+    margin:auto;
+  }
+
+  .line-white,.line-green {
+    margin-left:15%;
+  }
+
+  .volume-circle {
+    margin-left:35%;
+  }
+
+  /* Artist Icon */
+  .artist-icon {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 10px;
+  }
+
 }
