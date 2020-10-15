@@ -102,6 +102,8 @@ aside > hr {
   margin-right: 5px;
 }
 
+/* icon xs  */
+
 .icon-xs {
   display: none;
   width: 100%;
@@ -295,7 +297,6 @@ aside > hr {
     transform: translate(-50%, -50%);
     height: 50%;
     width: 50%;
-
 }
 
 .img-genre:hover .img-play {
@@ -473,6 +474,23 @@ aside > hr {
   align-items: center;
 }
 
+.line {
+  width: 80%;
+  margin:auto;
+  border-bottom: 4px solid grey;
+  border-radius: 20px;
+}
+
+.far.fa-play-circle {
+  font-size: 30px;
+}
+
+.time {
+  font-size: 13px;
+  text-align: center;
+  max-width: 10%;
+}
+
 /*  hover effect */
 
 .line-white {
@@ -480,16 +498,16 @@ aside > hr {
   border-bottom: 4px solid white;
   width: 40%;
   border-radius: 20px;
-  top: 50%;
-  left:30%;
-  transform: translate( -50% , -50% );
+  margin-left: 10%;
 }
 
 .volume-hover {
+  display: flex;
   position:absolute;
-  width: 70%;
+  width: 100%;
   margin:auto;
-  height: 20%;
+  height: 100%;
+  align-items: center;
 }
 
 .volume-hover:hover .line-green,
@@ -501,34 +519,20 @@ aside > hr {
   display: none;
   position:absolute;
   border-bottom: 4px solid #1ed760;
-  width: 58%;
+  width: 40%;
   border-radius: 20px;
-  top: 44%;
-  left:43%;
-  transform: translate( -50% , -50% );
+  margin-left: 10%;
 }
 
 .volume-circle {
   display: none;
-  position:absolute;
-  width: 24%;
-  top: 65%;
-  left:80%;
-  transform: translate( -50% , -50% );
+  position: absolute;
+  width: 40%;
+  margin-left: 30%;
+  text-align: center;
 }
 
 /* fine hover effect  */
-
-.line {
-  width: 80%;
-  margin:auto;
-  border-bottom: 4px solid grey;
-  border-radius: 20px;
-}
-
-.far.fa-play-circle {
-  font-size: 30px;
-}
 
 /* volume */
 
@@ -550,6 +554,7 @@ aside > hr {
   position: relative;
   width: 30%;
   border-bottom: 3px solid grey;
+  margin-right: 5%;
 }
 
   /* hover effect */
@@ -557,14 +562,14 @@ aside > hr {
   position: absolute;
   border-bottom: 3px solid white;
   width: 20%;
-  top: 50%;
-  left:72%;
+  margin-right: 15%;
   border-radius: 20px;
-  transform: translate( -50% , -50% );
 }
 
-.volume > * {
-  margin:0 15px;
+.fas.fa-bars,
+.fas.fa-desktop,
+.fas.fa-volume-up {
+  margin-right: 20px;
 }
 
 .volume-line-green {
@@ -572,27 +577,24 @@ aside > hr {
   position: absolute;
   border-bottom: 3px solid #1ed760;;
   width: 58%;
-  top: 50%;
-  left:46%;
   border-radius: 20px;
-  transform: translate( -50% , -50% );
+
 }
 
 .volume-circle-2 {
   display: none;
   position:absolute;
-  width: 24%;
-  top: 57%;
-  left:88%;
-  transform: translate( -50% , -50% );
+  width: 20%;
+  margin-left:54%;
 }
 
 .volume-hover-right {
+  display: flex;
   position: absolute;
-  height: 5px;
+  height: 100%;
   width: 35%;
-  left:59%;
   margin:auto;
+  align-items:center;
 }
 
 .volume-hover-right i {
