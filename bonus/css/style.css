@@ -612,8 +612,7 @@ aside > hr {
 
 /* Media query for smaller devices */
 
-
-/* /////  ESERCIZIO BONUS 1 ////// */
+/* /////  BONUS ESERCIZIO 4  ////// */
 
 @media all and (max-width:439px) {
 
@@ -1182,3 +1181,18 @@ aside > hr {
   }
 
 }
+
+
+/* ////// BONUS ESERCIZIO 2 ////// */
+
+@media all and (max-height:460px) {
+  .header,header {
+    display: none;
+  }
+
+  main {
+    height: 100vh;
+  }
+}
+
+/* ///// FINE BONUS ESERCIZIO 2 ///// */
