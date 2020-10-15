@@ -240,6 +240,30 @@ aside > hr {
   padding::15px 40px;
 }
 
+/* ESERCIZIO BONUS  */
+
+.upgrade-bonus  {
+  display: none;
+  color:#ccc;
+  margin-right: 10px;
+  border: 1px solid #1ed760;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 13px;
+}
+
+.upgrade-bonus a {
+  text-decoration: none;
+}
+
+.upgrade-bonus:hover a,
+.upgrade-bonus:hover i {
+  color:#1ed760;
+  font-weight: bolder;
+}
+
+
+
 /* Sezione scroll */
 
 /* main menu */
@@ -631,6 +655,24 @@ aside > hr {
     font-size: 9px;
   }
 
+  /* ESERCIZIO BONUS */
+
+  .header {
+    justify-content: center;
+  }
+
+  .upgrade {
+    display: none;
+  }
+
+  .upgrade-bonus {
+    display: block;
+  }
+
+  i:hover {
+    color:#1ed760;
+  }
+
 
   /* Restringimento aside */
   .aside {
@@ -878,6 +920,20 @@ aside > hr {
   }
   .user {
     padding-left: 10px;
+  }
+
+  /* ESERCIZIO BONUS */
+
+  .header {
+    justify-content: center;
+  }
+
+  .upgrade {
+    display: none;
+  }
+
+  .upgrade-bonus {
+    display: block;
   }
 
    /* Wrapping menu & albums */
@@ -1181,7 +1237,6 @@ aside > hr {
   }
 
 }
-
 
 /* ////// BONUS ESERCIZIO 2 ////// */
 
