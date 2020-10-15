@@ -250,6 +250,13 @@ aside > hr {
   border-radius: 30px;
   padding: 10px 30px;
   font-size: 13px;
+  animation: border-pulsate 2s infinite;
+}
+
+@keyframes border-pulsate {
+    0%   { border-color: rgb(30,215,96,1); }
+    50%  { border-color: rgb(30,215,96,0); }
+    100% { border-color: rgb(30,215,96,1); }
 }
 
 .upgrade-bonus a {
